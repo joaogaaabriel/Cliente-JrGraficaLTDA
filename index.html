@@ -1,137 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JrGráfica - Sua Gráfica em Goiânia!</title>
-    <link rel="stylesheet" href="HomePage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JrGráfica - Sua Gráfica em Goiânia</title>
+  <link rel="stylesheet" href="HomePage.css">
 </head>
+
 <body>
-    <!-- CABEÇALHO PRINCIPAL -->
-    <header class="cabecalho-principal">
-        <div class="logo-cabecalho">
-            <img src="images/Logo-JrGrafica-2026.PNG" alt="Logo JrGrafica" class="logo-header">
-        </div>
 
-        
+<header class="cabecalho-principal">
 
-        <nav class="navegacao-principal" aria-label="Navegação principal">
-            <ul class="menu-principal">
-                <li><a href="#home" target="_blank">Home</a></li>
-                <li><a href="#catalogo" target="_blank">Serviços</a></li>
-                <li><a href="#contato" target="_blank">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="titulo-site">
-            <h1>Sobre a nossa empresa</h1>
-            <h2>Mais de 20 anos de experiência no mercado gráfico</h2>
-        </div>
-
-
-
-<div class="slider">
-  <div class="slides">
-    <!-- Radio Buttons -->
-    <input type="radio" name="radio-btn" id="radio1" checked>
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-    <input type="radio" name="radio-btn" id="radio4">
-
-    <!-- Slide Images -->
-    <div class="slide first">
-      <img src="https://stoque.com.br/wp-content/uploads/2023/04/AdobeStock_343877993.jpeg.webp" alt="Máquina Imprimindo">
-    </div>
-
-    <div class="slide">
-      <img src="https://www.copyline.net.br/wp-content/uploads/2024/11/pode-alavancar-seus-resultados.jpg" alt="Máquina Imprimindo">
-    </div>
-
-    <div class="slide">
-      <img src="https://www.tribunapr.com.br/wp-content/uploads/2024/03/08152529/Shutterstock_1187101078-970x550.jpg" alt="Máquina Imprimindo">
-    </div>
-
-    <div class="slide">
-      <img src="https://www.mtall.com.br/wp-content/uploads/2015/06/impressao-digital2.jpg" alt="Máquina Imprimindo">
-    </div>
-
-    <!-- Navigation Auto -->
-    <div class="navigation-auto">
-      <div class="auto-btn1"></div>
-      <div class="auto-btn2"></div>
-      <div class="auto-btn3"></div>
-      <div class="auto-btn4"></div>
-    </div>
+  <!-- Logo -->
+  <div class="logo-cabecalho">
+    <img 
+      src="images/Logo-JrGrafica-2026.PNG"
+      alt="Logotipo da JrGráfica"
+      class="logo-header">
   </div>
 
-  <div class="manual-navigation">
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-    <label for="radio3" class="manual-btn"></label>
-    <label for="radio4" class="manual-btn"></label>
-  </div>
-</div>
+  <!-- Navegação -->
+  <nav class="navegacao-principal" aria-label="Navegação principal">
+    <ul class="menu-principal">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#catalogo">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
+  <!-- Título -->
+  <section class="titulo-site">
+    <h1>Sobre a nossa empresa</h1>
+    <p>Mais de 20 anos de experiência no mercado gráfico</p>
+  </section>
 
+  <!-- Slider -->
+  <section class="slider" aria-label="Galeria de imagens da gráfica">
+    <div class="slides">
 
+      <input type="radio" name="radio-btn" id="radio1" checked>
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
 
+      <div class="slide first">
+        <img src="https://stoque.com.br/wp-content/uploads/2023/04/AdobeStock_343877993.jpeg.webp" alt="Impressão gráfica em funcionamento">
+      </div>
 
+      <div class="slide">
+        <img src="https://www.copyline.net.br/wp-content/uploads/2024/11/pode-alavancar-seus-resultados.jpg" alt="Produção gráfica profissional">
+      </div>
 
+      <div class="slide">
+        <img src="https://www.tribunapr.com.br/wp-content/uploads/2024/03/08152529/Shutterstock_1187101078-970x550.jpg" alt="Equipamentos de impressão">
+      </div>
 
+      <div class="slide">
+        <img src="https://www.mtall.com.br/wp-content/uploads/2015/06/impressao-digital2.jpg" alt="Impressão digital">
+      </div>
 
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
 
-        <!--<div class="imagem-cabecalho">
-            <picture>
-                <source media="(max-width: 350px)" srcset="images/maquinatintas-pq.jpg">
-                <source media="(max-width: 800px)" srcset="images/maquinatintas-md.jpg">
-                <img src="images/maquinatintas.jpg" alt="Máquina de impressão com tintas coloridas">
-            </picture>
-        </div>-->
-    </header>
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </section>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-        <section class="catalogo-produtos" aria-labelledby="titulo-catalogo">
-            <h2 id="titulo-catalogo">Catálogo de Produtos</h2>
+</header>
 
-            <div class="grade-categorias">
-                <a href="#brindes" class="item-categoria">
-                    <img src="images/brindes.png" alt="Brindes personalizados">
-                    <span>Brindes</span>
-                </a>
+<main id="home">
 
-                <a href="#cartoes" class="item-categoria">
-                    <img src="images/panfletos.png" alt="Panfletos e flyers">
-                    <span>Panfletos</span>
-                </a>
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo-produtos" aria-labelledby="titulo-catalogo">
+    <h2 id="titulo-catalogo">Catálogo de Produtos</h2>
 
-                <a href="#panfletos" class="item-categoria">
-                    <img src="images/cartoes.png" alt="Cartões de visita">
-                    <span>Cartões</span>
-                </a>
+    <div class="grade-categorias">
 
-                <a href="#brindes" class="item-categoria">
-                    <img src="images/brindes.png" alt="Brindes personalizados">
-                    <span>Brindes</span>
-                </a>
+      <a href="#" class="item-categoria">
+        <img src="images/brindes.png" alt="Brindes personalizados">
+        <span>Brindes</span>
+      </a>
 
-                <a href="#cartoes" class="item-categoria">
-                    <img src="images/panfletos.png" alt="Panfletos e flyers">
-                    <span>Panfletos</span>
-                </a>
+      <a href="#" class="item-categoria">
+        <img src="images/panfletos.png" alt="Panfletos e flyers">
+        <span>Panfletos</span>
+      </a>
 
-                <a href="#panfletos" class="item-categoria">
-                    <img src="images/cartoes.png" alt="Cartões de visita">
-                    <span>Cartões</span>
-                </a>
-            </div>
-        </section>
-    </main>
+      <a href="#" class="item-categoria">
+        <img src="images/cartoes.png" alt="Cartões de visita">
+        <span>Cartões</span>
+      </a>
 
-    <!-- RODAPÉ -->
-    <footer>
-        <!-- Conteúdo do rodapé pode ser adicionado aqui -->
-    </footer>
-    <script src="script.js">  </script>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato">
+  <!-- Rodapé futuro -->
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
