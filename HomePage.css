@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgba(189, 189, 189, 0.63);
+    margin: 0px;
+}
+.nav{
+    background-color: rgb(16, 161, 228);
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 15px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li{
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+
+.menu li:hover{
+    text-shadow: 1px 0px 10px #00000065;
+    transform: translateY(-1px);
+}
+
+.button-whatsapp {
+  background-color: #25D366;
+  color: white;
+
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 30px;
+  
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+
+  transition: transform 0.3s ease;
+
+}
+
+.button-whatsapp:hover {
+    background-color: #1da851;
+    transform: translateY(-1px);
+}
+
+.image-header img{
+    display: block;
+    text-align: right;     /* centraliza a imagem */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.categorias{
+    background-color: #6fe49a5b;
+    margin: 40px auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px 20px;
+    max-width: 1000px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+  justify-items: center;
+
+}
+
+.categoria{
+    text-decoration: none;
+    color: black;
+}
+
+.categoria img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria span {
+  display: block;
+  margin: 0px auto;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+
+  .categorias {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .categorias h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .categorias-grid {
+    gap: 16px;
+  }
+
+  .categoria img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .categoria span {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
+
+
+    
+ 
