@@ -17,25 +17,30 @@
       src="images/JrGrafica-Logo2026.PNG"
       alt="Logotipo da JrGráfica"
       class="logo-header">
+
+      <div class="atend-whats">
+        <h1>Atendimento completo <br>via Whatsapp!</h1>
+        <a href="https://api.whatsapp.com/send/?phone=5562996615420&text=Ol%C3%A1%2C+vim+do+google+e+quero+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><img class="btn-whats" src="images/BtnWhats.png" alt="Botao Whatsapp"></a>
+
+      </div>
       
       
   </div>
 
 
-
   <!-- Navegação -->
   <nav class="navegacao-principal" aria-label="Navegação principal">
     <ul class="menu-principal">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#catalogo">Serviços</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#">Catálogo</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
     </ul>
   </nav>
 
   <!-- Título -->
   <section class="titulo-site">
     <h1>JrGráfica, sua gráfica em Goiânia!</h1>
-    <p>Mais de 20 anos de experiência no mercado gráfico</p>
+    <h3>Com mais de 20 anos de experiência no mercado gráfico.</h3>
   </section>
 
   <!-- Slider -->
@@ -83,63 +88,124 @@
 
 <main id="home">
 
+  <div class="mais-vendidos">
+    <h1>MAIS VENDIDOS</h1>
+  </div>
+
   <!-- Catálogo -->
   <section id="catalogo" class="catalogo-produtos" aria-labelledby="titulo-catalogo">
-    <h2 id="titulo-catalogo">Catálogo de Produtos</h2>
+
+    <section class="titulo-catalogo">
+      <h1>Catálogo de Produtos</h1>
+      <h3>Confira nossa linha completa de serviços gráficos com qualidade e entrega rápida</h3>
+    </section>
 
     <div class="grade-categorias">
 
-      <a href="#" class="item-categoria">
-        <img src="images/CartaoDeVisitaIcon.png" alt="Brindes personalizados">
-        <span>Cartões de Visita</span>
+      <a href="#" class="item-categoria" data-categoria="cartoes">
+
+        <div class="categoria-imagem">
+          <img src="images/CartaoDeVisitaIcon.png" alt="Cartões de Visita personalizados">
+        </div>
+
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Cartões de Visita</h2>
+
+          <p class="categoria-descricao">Papel couchê, laminado, verniz localizado. Impressão em alta resolução com acabamento premium.</p>
+
+          <span class="categoria-preco">A partir de R$ 129,90</span>
+
+        </div>
+        
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/PanfletoIcon.png" alt="Panfletos e flyers">
-        <span>Panfletos</span>
+      <a href="#" class="item-categoria" data-categoria="panfletos">
+        <div class="categoria-imagem">
+          <img src="images/PanfletoIcon.png" alt="Panfletos e flyers promocionais">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Panfletos</h2>
+          <p class="categoria-descricao">Flyers e folhetos promocionais. Vários formatos e gramaturas para sua campanha de marketing.</p>
+          <span class="categoria-preco">A partir de R$ 50,00 </span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/ConviteCasamentoIcon.png" alt="Panfletos e flyers">
-        <span>Convite de <br>Casamento<br></span>
+      <a href="#" class="item-categoria" data-categoria="convite-casamento">
+        <div class="categoria-imagem">
+          <img src="images/ConviteCasamentoIcon.png" alt="Convites de Casamento sofisticados">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Convites de Casamento</h2>
+          <p class="categoria-descricao">Luxo, sofisticação e personalização total. Envelopes e acabamentos especiais incluídos.</p>
+          <span class="categoria-preco">Sob consulta</span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/Convite15AnosIcon.png" alt="Panfletos e flyers">
-        <span>Convite de 15 Anos</span>
+      <a href="#" class="item-categoria" data-categoria="convite-15anos">
+        <div class="categoria-imagem">
+          <img src="images/Convite15AnosIcon.png" alt="Convites de 15 Anos personalizados">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Convites de 15 Anos</h2>
+          <p class="categoria-descricao">Design exclusivo para sua festa especial. Papel especial, laços e detalhes em relevo.</p>
+          <span class="categoria-preco">Sob consulta</span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/PolaroidIcon.png" alt="Panfletos e flyers">
-        <span>Polaroids <br>Personalizados<br></span>
+      <a href="#" class="item-categoria" data-categoria="polaroids">
+        <div class="categoria-imagem">
+          <img src="images/PolaroidIcon.png" alt="Polaroids Personalizados para eventos">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Polaroids Personalizados</h2>
+          <p class="categoria-descricao">Para eventos, lembranças e promoções. Papel fotográfico premium com alta durabilidade.</p>
+          <span class="categoria-preco">A partir de R$ 2,00 cada</span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/BannerIcon.png" alt="Panfletos e flyers">
-        <span>Banners <br>Personalizados<br></span>
+      <a href="#" class="item-categoria" data-categoria="banners">
+        <div class="categoria-imagem">
+          <img src="images/BannerIcon.png" alt="Banners Personalizados indoor e outdoor">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Banners Personalizados</h2>
+          <p class="categoria-descricao">PVC, lona, indoor e outdoor. Impressão em alta resolução resistente à intempéries.</p>
+          <span class="categoria-preco">A partir de R$ 85,00 m²</span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/AdesivoIcon.png" alt="Panfletos e flyers">
-        <span>Adesivos <br>Personalizados<br></span>
+      <a href="#" class="item-categoria" data-categoria="adesivos">
+        <div class="categoria-imagem">
+          <img src="images/AdesivoIcon.png" alt="Adesivos Personalizados em vinil">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Adesivos Personalizados</h2>
+          <p class="categoria-descricao">Vinil, transparente, fosco e brilhante. Cortes especiais e adesivos decorativos.</p>
+          <span class="categoria-preco">A partir de R$ 85,00 m²</span>
+        </div>
       </a>
 
-      <a href="#" class="item-categoria">
-        <img src="images/DevArtesIcon.png" alt="Panfletos e flyers">
-        <span>Desenvolvimento <br>de Artes<br></span>
+      <a href="#" class="item-categoria" data-categoria="desenvolvimento-artes">
+        <div class="categoria-imagem">
+          <img src="images/DevArtesIcon.png" alt="Desenvolvimento de Artes gráficas">
+        </div>
+        <div class="categoria-conteudo">
+          <h2 class="categoria-titulo">Desenvolvimento de Artes</h2>
+          <p class="categoria-descricao">Criação e diagramação profissional. Layouts personalizados e preparação para impressão.</p>
+          <span class="categoria-preco">Sob consulta</span>
+        </div>
       </a>
-      
 
+    </div>
+    
+    <div class="catalogo-cta">
+      <p class="cta-texto">Precisa de algo diferente?
+        <a href="https://api.whatsapp.com/send/?phone=5562996615420&text=Ol%C3%A1%2C+vim+do+google+e+quero+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0"
+        class="cta-link" target="_blank">Entre em contato</a> para um orçamento personalizado!</p>
     </div>
   </section>
 
-  
-
-</main>
-
-<footer id="contato">
-
-  <section class="contato-chamativo">
+  <!--<section class="contato-chamativo">
   <h1>Fale Conosco Agora Mesmo!</h1>
 
   <div class="botao-whatsapp-container">
@@ -160,15 +226,92 @@
       aria-label="Ver localização no mapa"
     >
       <span>Localização</span>
-    </a>
+    </a>-->
 
   </div>
 </section>
 
+<section class="imagem-decorativa">
+  <div class="imagem-overlay"></div>
+</section>
 
-  
+</main>
 
+
+<!-- Footer -->
+<footer id="contato" class="footer">
+  <div class="footer-container">
+
+    <!-- COLUNA 1: MARCA -->
+    <div class="footer-col footer-brand">
+      <img 
+        src="images/JrGrafica-Logo2026.PNG"
+        alt="JrGráfica"
+        class="footer-logo"
+      >
+
+      <span class="footer-description">
+        Gráfica em Goiânia com foco em qualidade, agilidade e soluções completas em impressão.
+      </span>
+
+      <div class="footer-social">
+        <a href="#" class="social-link social-instagram" aria-label="Instagram"></a>
+        <a href="#" class="social-link social-whatsapp" aria-label="WhatsApp"></a>
+      </div>
+    </div>
+
+    <!-- COLUNA 2: CONTATO -->
+    <div class="footer-col">
+      <h3 class="footer-title">Contato</h3>
+
+      <ul class="footer-list">
+        <li class="footer-item footer-phone">(62) 99661-5420</li>
+        <li class="footer-item footer-location">Goiânia - GO</li>
+        <li class="footer-item footer-hours">Seg a Sex • 8h às 18h</li>
+      </ul>
+    </div>
+
+    <!-- COLUNA 3: LINKS -->
+    <div class="footer-col">
+      <h3 class="footer-title">Links</h3>
+
+      <ul class="footer-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalogo">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA 4: MAPA -->
+    <div class="footer-col">
+      <h3 class="footer-title">Localização</h3>
+
+      <a 
+        href="https://maps.app.goo.gl/ixBgFqJg6NezSZa8A"
+        target="_blank"
+        class="footer-map-btn"
+        aria-label="Abrir localização no Google Maps"
+      >
+        Ver no Google Maps
+      </a>
+    </div>
+
+  </div>
+
+  <!-- RODAPÉ FINAL -->
+  <div class="footer-bottom">
+    <p>© 2024 JrGráfica</p>
+    <p>Todos os direitos reservados</p>
+  </div>
 </footer>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora expedita, quasi maiores atque eaque ullam minus nobis, quia voluptatem illo quas. Saepe inventore dolore modi quibusdam illum dolorum dolores.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora expedita, quasi maiores atque eaque ullam minus nobis, quia voluptatem illo quas. Saepe inventore dolore modi quibusdam illum dolorum dolores.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora expedita, quasi maiores atque eaque ullam minus nobis, quia voluptatem illo quas. Saepe inventore dolore modi quibusdam illum dolorum dolores.
+
+
+
 
 <script src="script.js"></script>
 </body>

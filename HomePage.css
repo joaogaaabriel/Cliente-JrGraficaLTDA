@@ -13,6 +13,45 @@
   src: url(fonts/MadeTommyBold.otf) format('opentype');
 }
 
+@font-face {
+  font-family: 'Ramillas-Medium';
+  src: url(fonts/RamillasMedium.ttf) format('opentype');
+}
+
+:root{
+--fonte-primary: 'Tommy-Bold', Arial, Helvetica, sans-serif;
+--fonte-secondary: 'Tommy-Medium', Arial, Helvetica, sans-serif;
+--fonte-tertiary: 'Ramillas-Medium', Arial, Helvetica, sans-serif;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-family: var(--fonte-primary);
+  line-height: 2.5rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-family: var(--fonte-secondary);
+}
+h3{
+  font-size: 1rem;
+  font-family: var(--fonte-secondary);
+}
+
+p, span, a{
+  font-family: var(--fonte-secondary);
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+
 /* =====================
    RESET BÁSICO
 ===================== */
@@ -23,55 +62,70 @@
 }
 
 html, body{
-  margin: 10px
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* =====================
    CABEÇALHO
 ===================== */
-.cabecalho-principal {
-  font-family: 'Tommy-Medium', Arial, sans-serif;
-}
 
 /* Logo */
 .logo-cabecalho {
+  max-width: 1000px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   border-bottom: 2px solid rgba(0,0,0,0.08);
-  padding: 10px 0;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .logo-header {
-  max-width: 250px;
-  width: 100%;
+  max-width: 15rem;
+  margin: 20px auto;
 }
 
+.atend-whats{
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
 
+.btn-whats{
+  max-width: 18rem;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.356);
+  cursor: pointer;
 
+  transition: all 0.5s ease;
+}
+
+.btn-whats:hover{
+  transform: translateY(-4px);
+}
 
 /* =====================
    NAVEGAÇÃO
 ===================== */
 .navegacao-principal {
-  margin: 15px auto;
-  max-width: 1000px;
   background: rgb(16,161,228);
-  border-radius: 40px;
-  
+  max-width: 1000px;
+  margin: 10px auto;
 }
 
 .menu-principal {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 32px;
-  padding: 14px;
-  
+  gap: clamp(1rem, 4vw, 2rem);
+  padding: 10px;
 }
 
 .menu-principal a {
+  font-size: 1.5rem;
   color: #fff;
-  text-decoration: none;
-  font-size: clamp(22px, 3vw, 32px)
 }
 
 /* =====================
@@ -79,17 +133,6 @@ html, body{
 ===================== */
 .titulo-site {
   text-align: center;
-  padding: 10px 20px;
-
-}
-
-.titulo-site h1 {
-  font-family: 'Tommy-Bold';
-  font-size: clamp(22px, vw, 32px)
-}
-
-.titulo-site p {
-  font-size: clamp(14px, 4vw, 26px)
 }
 
 /* =====================
@@ -98,12 +141,12 @@ html, body{
 .slider {
   width: 100%;
   max-width: 1000px;
-  height: 260px;
-  margin: 20px auto;
+  height: 200px;
+  margin: 10px auto;
   overflow: hidden;
-  border-radius: 15px;
+  
   position: relative;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 0px 0px 10px #00000063;
 }
 
 .slides {
@@ -111,7 +154,6 @@ html, body{
   width: 400%;
   height: 100%;
   transition: margin-left 0.8s ease;
-  
 }
 
 .slides input {
@@ -126,8 +168,6 @@ html, body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
-
 }
 
 /* Controles */
@@ -139,7 +179,6 @@ html, body{
   display: flex;
   justify-content: center;
   gap: 12px;
- 
 }
 
 .manual-btn,
@@ -157,199 +196,469 @@ html, body{
 #radio3:checked ~ .first { margin-left: -50%; }
 #radio4:checked ~ .first { margin-left: -75%; }
 
+.mais-vendidos{
+  max-width: 1000px;
+  margin: 10px auto;
+  
+  border-top: 2px solid rgb(16,161,228);
+  border-bottom: 2px solid rgb(16,161,228);
+
+
+}
+
+.mais-vendidos h1{
+  font-family: var(--fonte-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(16,161,228);
+  padding: 12px;
+}
+
+
 /* =====================
    CATÁLOGO
 ===================== */
-.catalogo-produtos { /* Box do catalogo  */
-  margin: 0px auto;
-  padding: 25px 15px;
-  background: #2068a027;
-  border-radius: 10px;
+.catalogo-produtos {
+  background: #2068a026;
   max-width: 1000px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.titulo-catalogo {
+  text-align: center;
+  margin-bottom: 20px;
   
 }
 
-#titulo-catalogo{ /* Titulo do Catalogo  */
-  font-family: 'Tommy-Bold', Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin: 20px auto;
+.titulo-catalogo h1{
+  color: #2068a0;
+}
+
+.titulo-catalogo h3{
+  color: #333333;
 }
 
 .grade-categorias {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
 }
 
 .item-categoria {
-  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-  min-height: 235px;
-  padding: 16px 12px;
-  border-radius: 18px;
+  min-height: 320px;
+  padding: 20px;
 
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   
-  -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s ease;
+  position: relative; /* referência para filhos absolutos */
+  overflow: hidden; /* corta excesso visual */
 }
 
-/* IMAGEM */
+/* Imagem Container */
+.categoria-imagem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative; /* Ele será posicionado em relação ao pai mais próximo com position: relative*/
+}
+
+.categoria-imagem::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: -10px;
+  z-index: 0;
+}
+
+/* Imagem */
 .item-categoria img {
   width: 130px;
   height: 130px;
+
+  background-color: #fff;
   border-radius: 50%;
-  background: #fff;
-  padding: 6px;
+  padding: 10px;
+  border: 3px solid #d5efff;
   
-  transition: transform 0.25s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
 }
 
-/* TEXTO */
-.item-categoria > span {
-  font-family: 'Tommy-Medium', Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 5vh;
+/* Conteúdo */
+.categoria-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  color: black;
 }
 
-/* HOVER (DESKTOP) */
+.categoria-titulo {
+  font-family: var(--fonte-primary);
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.categoria-descricao {
+  font-family: var(--fonte-tertiary);
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.categoria-preco {
+  font-family: var(--fonte-primary);
+  color: #10a1e4;
+  background: #10a1e41a;
+  padding: 8px 15px;
+  border-radius: 10px;
+
+  min-height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
 .item-categoria:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-  border-color: rgb(16, 161, 228);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-color: #10a1e4;
 }
 
-/* IMAGEM NO HOVER */
 .item-categoria:hover img {
+  transform: scale(1.1);
+  border-color: #10a1e4;
+  background: #f0f9ff;
+}
+
+.item-categoria:hover .categoria-preco {
+  background: #10a1e4;
+  color: white;
   transform: scale(1.05);
 }
 
-/* FEEDBACK AO TOQUE (MOBILE) */
-.item-categoria:active {
-  transform: scale(0.97);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+.item-categoria:hover .categoria-titulo {
+  color: #10a1e4;
 }
 
-.item-categoria {
-  text-decoration: none;
-}
-
-
-
-/* =========================
-   SEÇÃO CONTATO CHAMATIVO
-========================= */
-
-.contato-chamativo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: #2068a027;
-  border-radius: 10px;
-
-  margin: 20px auto;
-  padding: 20px;
-
-  font-family: 'Tommy-Bold', Arial, Helvetica, sans-serif;
-}
-
-/* TÍTULO */
-.contato-chamativo h1 {
-  font-size: clamp(22px, 4vw, 32px);
+/* CTA do Catálogo */
+.catalogo-cta {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  border-color: 0px solid #10a1e4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-/* =========================
-   CONTAINER DOS BOTÕES
-========================= */
+.catalogo-cta:hover{
+  border-color: 2px solid #10a1e4;
+  transform: translateY(-8px);
+  border-color: 2px solid #10a1e4;
+  border-color: 2px solid #10a1e4;
 
-.botao-whatsapp-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
-/* =========================
-   BOTÃO BASE (REUTILIZÁVEL)
-========================= */
+.cta-texto {
+  color: #333333;
+  margin: 0;
+}
 
-.caracters-btn {
-  border-radius: 50px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
-
-  width: 100%;
-  max-width: 350px;
-  height: clamp(56px, 10vh, 72px);
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0 24px 0 64px;
-
+.cta-link {
+  color: #10a1e4;
+  font-weight: bold;
   text-decoration: none;
-  color: #ffffff;
-
-  font-size: clamp(18px, 4vw, 24px);
-  font-weight: 600;
-  line-height: 1;
-
-  cursor: pointer;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-/* =========================
-   BOTÃO WHATSAPP
-========================= */
-
-.btn-person-whatsapp {
-  background:
-    url(images/WhatsappIcon.png) no-repeat 0px center / 70px,
-    linear-gradient(to bottom, #00ae5a, #009054);
+.cta-link:hover {
+  border-bottom-color: #10a1e4;
+  color: #0d8bc7;
 }
 
-.btn-person-whatsapp:hover {
-  transform: translateY(-3px);
+/* Badge Mais Vendido (opcional para destacar alguns produtos) */
+.item-categoria[data-categoria="cartoes"]::before,
+.item-categoria[data-categoria="panfletos"]::before {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #ff6b6b;
+  color: white;
+  padding: 5px 35px;
+  font-size: 11px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  z-index: 2;
 }
 
-/* =========================
-   BOTÃO LOCALIZAÇÃO
-========================= */
+/* Responsividade */
+@media (max-width: 768px) {
+  *{
+    transform: none;
+    transition: none;
+  }
+  .grade-categorias {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .item-categoria {
+    min-height: 300px;
+    padding: 15px;
+  }
+  
+  .categoria-titulo {
+    font-size: 20px;
+  }
+  
+  .categoria-descricao {
+    font-size: 13px;
+  }
+  
+  .mais-vendidos h1 {
+    font-size: 24px;
+  }
+}
 
-.btn-person-local {
-  background: url(images/LocalizacaoIcon.png);
+@media (max-width: 480px) {
+  *{
+    transform: none;
+    transition: none;
+  }
+  .grade-categorias {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  #titulo-catalogo {
+    font-size: 28px;
+  }
+  
+  .catalogo-descricao {
+    font-size: 16px;
+  }
+  
+  .item-categoria img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Efeito de destaque ao clicar */
+.item-categoria:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-decorativa {
+  max-width: 1000px;
+  height: 250px;
+  margin: 0 auto;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  /* IMAGEM */
+  background-image: url("images/ImgDecorativa.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: 0px center;
-  background-size: 70px;
-  background-color: #FF0009;
+
+  /* PARALLAX */
+  background-attachment: fixed;
 }
 
-.btn-person-local:hover {
+/* =========================
+   OVERLAY CLARO
+========================= */
+
+.imagem-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(81, 194, 247, 0.45);
+}
+
+
+
+/* =====================
+   FOOTER BASE
+===================== */
+
+.footer {
+  color: #b0b0b0;
+  margin: 10px auto;
+  
+}
+
+.footer-container {
+  max-width: 1000px;
+  border-top: 2px solid rgba(0,0,0,0.08);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 20px;
+}
+
+/* =====================
+   BRAND
+===================== */
+
+.footer-logo {
+  display: block;
+  max-width: 10rem;
+}
+
+.footer-description {
+  padding-top: 10px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   SOCIAL
+===================== */
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover {
   transform: translateY(-3px);
+  opacity: 0.9;
 }
 
+.social-instagram {
+  background-image: url(images/InstagramIcon.png);
+  background-color: #333;
+}
 
+.social-whatsapp {
+  background-image: url(images/WhatsappIcon.png);
+  background-color: #25D366;
+}
+
+/* =====================
+   COLUNAS
+===================== */
+
+.footer-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li,
+.footer-list a {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.footer-list li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-list a:hover {
+  color: #10a1e4;
+}
+
+/* =====================
+   ÍCONES DE CONTATO
+===================== */
+
+.footer-item {
+  padding-left: 28px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px;
+}
+
+.footer-phone {
+  background-image: url(images/WhatsappIcon.png);
+}
+
+.footer-location {
+  background-image: url(images/LocalizacaoIcon.png);
+}
+
+.footer-hours {
+  background-image: url(images/LocalizacaoIcon.png);
+}
+
+/* =====================
+   BOTÃO MAPA
+===================== */
+
+.footer-map-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  background-color: #ff0009;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-map-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* =====================
+   FOOTER BOTTOM
+===================== */
+
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
 
