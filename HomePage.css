@@ -471,6 +471,7 @@ html, body{
 .item-categoria:active {
   transform: scale(0.98);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .imagem-decorativa {
@@ -480,13 +481,13 @@ html, body{
 
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
 
   /* IMAGEM */
   background-image: url("images/ImgDecorativa.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  
 
   /* PARALLAX */
   background-attachment: fixed;
@@ -499,9 +500,13 @@ html, body{
 .imagem-overlay {
   position: absolute;
   inset: 0;
-
   background-color: rgba(81, 194, 247, 0.45);
 }
+
+
+
+
+
 
 
 
@@ -511,18 +516,18 @@ html, body{
 
 .footer {
   color: #b0b0b0;
-  margin: 10px auto;
-  
+  margin-top: 2rem;
 }
 
 .footer-container {
   max-width: 1000px;
-  border-top: 2px solid rgba(0,0,0,0.08);
   margin: 0 auto;
+  padding: 2rem 1.25rem;
+  border-top: 2px solid rgba(0,0,0,0.08);
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 20px;
 }
 
 /* =====================
@@ -530,14 +535,16 @@ html, body{
 ===================== */
 
 .footer-logo {
+  max-width: 8rem;
+  margin-bottom: 1rem;
   display: block;
-  max-width: 10rem;
 }
 
 .footer-description {
-  padding-top: 10px;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #9a9a9a;
+  margin-bottom: 1.25rem;
 }
 
 /* =====================
@@ -552,17 +559,16 @@ html, body{
 .social-link {
   width: 40px;
   height: 40px;
-  display: inline-block;
   border-radius: 50%;
-  background-size: 22px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-size: 20px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .social-link:hover {
   transform: translateY(-3px);
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .social-instagram {
@@ -580,9 +586,10 @@ html, body{
 ===================== */
 
 .footer-title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .footer-list {
@@ -590,32 +597,30 @@ html, body{
   padding: 0;
 }
 
-.footer-list li,
-.footer-list a {
-  font-size: 0.95rem;
-  color: #b0b0b0;
-  text-decoration: none;
-}
-
 .footer-list li {
   margin-bottom: 0.75rem;
 }
 
-.footer-list a:hover {
+.footer-item {
+  display: block;
+  padding-left: 32px;
+  min-height: 32px;
+  line-height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-item:hover {
   color: #10a1e4;
 }
 
-/* =====================
-   ÍCONES DE CONTATO
-===================== */
-
-.footer-item {
-  padding-left: 28px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 18px;
-}
-
+/* Ícones */
 .footer-phone {
   background-image: url(images/WhatsappIcon.png);
 }
@@ -637,11 +642,14 @@ html, body{
   margin-top: 0.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
+
   background-color: #ff0009;
   color: #ffffff;
-  text-decoration: none;
+  font-size: 0.9rem;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .footer-map-btn:hover {
@@ -654,11 +662,58 @@ html, body{
 ===================== */
 
 .footer-bottom {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #333;
+
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
   font-size: 0.85rem;
 }
 
+/* =====================
+   RESPONSIVIDADE
+===================== */
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    max-width: 6rem;
+  }
+
+  .footer-social {
+    display: none;
+  }
+
+  .footer-item {
+    padding-left: 0;
+    padding-top: 36px;
+    background-position: center top;
+    line-height: 1.4;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
