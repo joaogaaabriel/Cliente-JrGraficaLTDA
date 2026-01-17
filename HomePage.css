@@ -73,37 +73,23 @@ html, body{
 /* Logo */
 .logo-cabecalho {
   max-width: 1000px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  border-bottom: 2px solid rgba(0,0,0,0.08);
   margin: 0 auto;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column; /* MOBILE */
+  align-items: center;
+  gap: 16px;
+
+  overflow: hidden;
+
+  border-bottom: 2px solid rgba(0,0,0,0.08);
 }
+
 
 .logo-header {
   max-width: 15rem;
   margin: 20px auto;
-}
-
-.atend-whats{
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-}
-
-.btn-whats{
-  max-width: 18rem;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 10px;
-  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.356);
-  cursor: pointer;
-
-  transition: all 0.5s ease;
-}
-
-.btn-whats:hover{
-  transform: translateY(-4px);
 }
 
 /* =====================
@@ -418,7 +404,19 @@ html, body{
   *{
     transform: none;
     transition: none;
+    
   }
+
+  .logo-cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .atend-whats {
+    text-align: left;
+  }
+}
+  
   .grade-categorias {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -440,13 +438,14 @@ html, body{
   .mais-vendidos h1 {
     font-size: 24px;
   }
-}
+
 
 @media (max-width: 480px) {
   *{
     transform: none;
     transition: none;
   }
+
   .grade-categorias {
     grid-template-columns: 1fr;
     max-width: 320px;
@@ -476,244 +475,140 @@ html, body{
 
 .imagem-decorativa {
   max-width: 1000px;
-  height: 250px;
+  height: 200px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
-  position: relative;
-  overflow: hidden;
-
-  /* IMAGEM */
   background-image: url("images/ImgDecorativa.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: right right;
   background-repeat: no-repeat;
-  
-
-  /* PARALLAX */
-  background-attachment: fixed;
 }
 
-/* =========================
-   OVERLAY CLARO
-========================= */
-
-.imagem-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(81, 194, 247, 0.45);
+/* parallax só no desktop */
+@media (min-width: 1024px) {
+  .imagem-decorativa {
+    background-attachment: fixed;
+  }
 }
 
 
-
-
-
-
-
-
-/* =====================
-   FOOTER BASE
-===================== */
-
-.footer {
-  color: #b0b0b0;
-  margin-top: 2rem;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
+/* Footer Styles */
+footer {
   border-top: 2px solid rgba(0,0,0,0.08);
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  padding: 1rem 0 0;
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
-/* =====================
-   BRAND
-===================== */
-
-.footer-logo {
-  max-width: 8rem;
-  margin-bottom: 1rem;
-  display: block;
+#footer-content {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.footer-description {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #9a9a9a;
-  margin-bottom: 1.25rem;
-}
-
-/* =====================
-   SOCIAL
-===================== */
-
-.footer-social {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-3px);
-  opacity: 0.85;
-}
-
-.social-instagram {
-  background-image: url(images/InstagramIcon.png);
-  background-color: #333;
-}
-
-.social-whatsapp {
-  background-image: url(images/WhatsappIcon.png);
-  background-color: #25D366;
-}
-
-/* =====================
-   COLUNAS
-===================== */
-
-.footer-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.footer-list {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-list li {
+/* Seção de contatos */
+#footer-contacts {
   margin-bottom: 0.75rem;
 }
 
-.footer-item {
-  display: block;
-  padding-left: 32px;
-  min-height: 32px;
-  line-height: 32px;
-
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px;
-
-  color: #b0b0b0;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-item:hover {
-  color: #10a1e4;
-}
-
-/* Ícones */
-.footer-phone {
-  background-image: url(images/WhatsappIcon.png);
-}
-
-.footer-location {
-  background-image: url(images/LocalizacaoIcon.png);
-}
-
-.footer-hours {
-  background-image: url(images/LocalizacaoIcon.png);
-}
-
-/* =====================
-   BOTÃO MAPA
-===================== */
-
-.footer-map-btn {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 3rem;
-
-  background-color: #ff0009;
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.footer-map-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
-
-/* =====================
-   FOOTER BOTTOM
-===================== */
-
-.footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #333;
-
+.logo-footer{
+  max-width: 10rem;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-
-  font-size: 0.85rem;
 }
 
-/* =====================
-   RESPONSIVIDADE
-===================== */
-
-@media (max-width: 992px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+#footer-contacts p {
+  text-align: center;
+  
+  color: #000000;
+  margin-top: 1rem;
 }
 
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 1rem;
-  }
+#footer-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
 
-  .footer-brand {
+#footer-social-media .footer-link {
     display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-
-  .footer-logo {
-    max-width: 6rem;
-  }
-
-  .footer-social {
-    display: none;
-  }
-
-  .footer-item {
-    padding-left: 0;
-    padding-top: 36px;
-    background-position: center top;
-    line-height: 1.4;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 2rem;
 }
+
+#footer-social-media .footer-link:hover {
+    transform: translateY(-5px);
+}
+
+#instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+#whatsapp {
+    background-color: #25D366;
+}
+
+/* Listas do footer */
+.footer-list {
+    list-style: none;
+}
+
+.footer-list h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #4cc9f0;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-list h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4361ee;
+}
+
+.footer-list li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-list .footer-link {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-list .footer-link:hover {
+    color: #4cc9f0;
+    transform: translateX(5px);
+}
+
+/* Copyright */
+#footer-copyright {
+  max-width: 1000px;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid rgba(0,0,0,0.08);
+  margin-top: 1rem;
+  
+  color: #000000;
+  font-size: 0.9rem;
+  font-family: var(--fonte-secondary);
+}
+
