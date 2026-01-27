@@ -5,17 +5,17 @@
 ===================== */
 @font-face {
   font-family: 'Tommy-Medium';
-  src: url(fonts/MadeTommyMedium.otf) format('opentype');
+  src: url(../fonts/MadeTommyMedium.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'Tommy-Bold';
-  src: url(fonts/MadeTommyBold.otf) format('opentype');
+  src: url(../fonts/MadeTommyBold.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'Ramillas-Medium';
-  src: url(fonts/RamillasMedium.ttf) format('opentype');
+  src: url(../fonts/RamillasMedium.ttf) format('opentype');
 }
 
 :root{
@@ -185,20 +185,20 @@ html, body{
 .mais-vendidos{
   max-width: 1000px;
   margin: 10px auto;
-  
   border-top: 2px solid rgb(16,161,228);
   border-bottom: 2px solid rgb(16,161,228);
-
-
 }
 
 .mais-vendidos h1{
   font-family: var(--fonte-primary);
+  color: rgb(16,161,228);
+  padding: 12px;
+
+  font-size: 1.8rem;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(16,161,228);
-  padding: 12px;
 }
 
 
@@ -436,7 +436,7 @@ html, body{
   }
   
   .mais-vendidos h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
 
 
@@ -479,7 +479,7 @@ html, body{
   margin: 0 auto;
   margin-bottom: 20px;
 
-  background-image: url("images/ImgDecorativa.jpg");
+  background-image: url("../images/ImgDecorativa.jpg");
   background-size: cover;
   background-position: right right;
   background-repeat: no-repeat;
