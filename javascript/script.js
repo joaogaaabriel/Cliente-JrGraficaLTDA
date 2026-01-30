@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       currentSlide = (currentSlide + 1) % radios.length;
       radios[currentSlide].checked = true;
       updateActiveIndicator();
-    }, 4000); // Muda a cada 5 segundos
+    }, 4000);
   }
   
   // Atualizar indicador ativo

@@ -1,45 +1,229 @@
+/* ===== CONTAINER PRINCIPAL ===== */
 .pagina-cartoes{
-  margin: 20px auto;
   max-width: 1000px;
-
   background-color: rgba(49, 154, 168, 0.222);
+  margin: 10px auto;
+  padding: 10px;
 }
 
+.cartoes-de-visita{
+  border: 2px solid black;
+  margin: 10px auto;
+}
+
+/* ===== CARD ===== */
 .cartao-simples{
+  margin: 40px 40px;
   display: flex;
-  align-items: center;
   gap: 40px;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cartao-simples{
+  border-left: 5px solid #000000;
 }
 
-.cartao-simples img{
+.cartao-colorido {
+  border-left: 5px solid #e74c3c;
+}
 
-  max-width: 300px;
+.cartao-bopp {
+  border-left: 5px solid #3498db;
+}
+
+/* ===== IMAGEM ===== */
+.imagem-cartao{
+  width: 300px;
+  height: 300px;
+}
+
+.imagem-cartao img{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
+/* ===== BLOCO DIREITO ===== */
+.conjunto-divs{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* ===== INFORMAÇÕES ===== */
 .cartao-info{
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  
+  gap: 10px;
+}
+
+.cartao-info h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.cartao-info > p {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.cartao-info ul{
+  padding-left: 0;
 }
 
 .cartao-info li{
   list-style: none;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
 }
 
-@media (max-width: 715px){
+.cartao-info li:before {
+  content: "•";
+  color: #10a1e4;
+  position: absolute;
+  left: 0;
+}
 
+/* ===== MATERIAL / PREÇO ===== */
+.info-material{
+  display: flex;
+  gap: 20px;
+}
 
-.cartao-simples{
+.qnt-material,
+.valor-material{
+  background-color: #10a1e4;
+  color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cores diferentes para cada tipo de cartão */
+.cartao-colorido .qnt-material,
+.cartao-colorido .valor-material {
+  background-color: #3498db;
+}
+
+.cartao-bopp .qnt-material,
+.cartao-bopp .valor-material {
+  background-color: #3498db;
+}
+
+/* ===== CONTROLE DE ESPAÇO ENTRE H1 E H2 ===== */
+.qnt-material h1,
+.qnt-material h2,
+.valor-material h1,
+.valor-material h2{
+  margin: 0;
+  line-height: 1.2;
+}
+
+.qnt-material h1,
+.valor-material h1{
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  text-align: center;
+}
+
+.qnt-material h2,
+.valor-material h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.cartao-info li{
+  font-size: 1.1rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 930px){
+  .info-material{
     flex-direction: column;
     align-items: center;
-    text-align:center;
   }
-
-  .cartao-info ul{
-    text-align: left;
+  
+  .qnt-material,
+  .valor-material {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
+@media (max-width: 768px){
+  .titulo-site{
+    font-size: 0.5rem;
+  }
+
+  .cartao-simples{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .imagem-cartao{
+    width: 250px;
+    height: 250px;
+  }
+
+  .info-material{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cartao-info li{
+    text-align: left;
+  }
+
+  .qnt-material h2,
+  .valor-material h2{
+    font-size: 1.4rem;
+  }
+
+  .qnt-material h1,
+  .valor-material h1{
+    font-size: 1rem;
+  }
+
+  .cartao-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .cartao-info li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .imagem-cartao {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cartao-info h2 {
+    font-size: 1.3rem;
+  }
+  
+  .qnt-material h2,
+  .valor-material h2 {
+    font-size: 1.2rem;
+  }
+
+
+}
