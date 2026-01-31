@@ -1,0 +1,332 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+.pagina-polaroids{
+  max-width: 1000px;
+  background-color: rgba(32, 104, 160, 0.08);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* ===== CARD ===== */
+.polaroid-item{
+  margin: 20px 10px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-left: 5px solid #10a1e4;
+  border-radius: 8px;
+}
+
+/* Cores diferentes para cada pacote */
+.polaroid-azul {
+  border-left: 5px solid #3498db;
+}
+
+.polaroid-verde {
+  border-left: 5px solid #2ecc71;
+}
+
+.polaroid-laranja {
+  border-left: 5px solid #e67e22;
+}
+
+.polaroid-roxo {
+  border-left: 5px solid #9b59b6;
+}
+
+.polaroid-grande {
+  border-left: 5px solid #e74c3c;
+}
+
+/* ===== IMAGEM ===== */
+.imagem-polaroid{
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.imagem-polaroid img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===== BLOCO DIREITO ===== */
+.conjunto-divs{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* ===== INFORMAÇÕES ===== */
+.polaroid-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.polaroid-info h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.polaroid-info > p {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.polaroid-info ul{
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.polaroid-info li{
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.polaroid-info li:before {
+  content: "•";
+  color: #10a1e4;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* ===== MATERIAL / PREÇO ===== */
+.info-material{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.qnt-material,
+.valor-material{
+  background-color: #10a1e4;
+  color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Cores diferentes para cada pacote */
+.polaroid-azul .qnt-material,
+.polaroid-azul .valor-material {
+  background-color: #3498db;
+}
+
+.polaroid-verde .qnt-material,
+.polaroid-verde .valor-material {
+  background-color: #2ecc71;
+}
+
+.polaroid-laranja .qnt-material,
+.polaroid-laranja .valor-material {
+  background-color: #e67e22;
+}
+
+.polaroid-roxo .qnt-material,
+.polaroid-roxo .valor-material {
+  background-color: #9b59b6;
+}
+
+.polaroid-grande .qnt-material,
+.polaroid-grande .valor-material {
+  background-color: #e74c3c;
+}
+
+/* Efeito hover nos cards de preço */
+.qnt-material:hover,
+.valor-material:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== CONTROLE DE ESPAÇO ENTRE H1 E H2 ===== */
+.qnt-material h1,
+.qnt-material h2,
+.valor-material h1,
+.valor-material h2{
+  margin: 0;
+  line-height: 1.2;
+}
+
+.qnt-material h1,
+.valor-material h1{
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: var(--fonte-secondary);
+}
+
+.qnt-material h2,
+.valor-material h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-family: var(--fonte-primary);
+}
+
+/* ===== SEPARADOR DE SEÇÃO ===== */
+.separador-secao {
+  text-align: center;
+  margin: 40px 10px 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #10a1e4, #2ecc71);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.separador-secao h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: var(--fonte-primary);
+}
+
+.separador-secao p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: var(--fonte-secondary);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 930px){
+  .info-material{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qnt-material,
+  .valor-material {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  .titulo-site h1 {
+    font-size: 1.8rem;
+  }
+
+  .titulo-site h2 {
+    font-size: 1.2rem;
+  }
+
+  .polaroid-item{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 5px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .imagem-polaroid{
+    width: 250px;
+    height: 250px;
+  }
+
+  .info-material{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .polaroid-info li{
+    text-align: left;
+  }
+
+  .qnt-material h2,
+  .valor-material h2{
+    font-size: 1.4rem;
+  }
+
+  .qnt-material h1,
+  .valor-material h1{
+    font-size: 1rem;
+  }
+
+  .polaroid-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .polaroid-info li {
+    font-size: 1rem;
+  }
+
+  .separador-secao h2 {
+    font-size: 1.6rem;
+  }
+
+  .separador-secao p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-polaroid {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .polaroid-info h2 {
+    font-size: 1.3rem;
+  }
+  
+  .qnt-material h2,
+  .valor-material h2 {
+    font-size: 1.2rem;
+  }
+
+  .qnt-material,
+  .valor-material {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .polaroid-item {
+    padding: 12px;
+  }
+
+  .separador-secao {
+    margin: 30px 5px 15px;
+    padding: 15px;
+  }
+
+  .separador-secao h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Efeito de destaque ao clicar */
+.polaroid-item:active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Melhorias para legibilidade em mobile */
+@media (max-width: 768px) {
+  .polaroid-info ul {
+    padding-left: 10px;
+  }
+  
+  .polaroid-info li:before {
+    left: -10px;
+  }
+}

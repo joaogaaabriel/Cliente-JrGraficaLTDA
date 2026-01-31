@@ -1,0 +1,279 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+.pagina-panfletos{
+  max-width: 1000px;
+  background-color: rgba(49, 154, 168, 0.222);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* ===== CARD ===== */
+.panfleto-item{
+  margin: 40px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Bordas coloridas para cada tipo */
+.panfleto-quatro-zero {
+  border-left: 5px solid #2ecc71; /* Verde */
+}
+
+.panfleto-quatro-um {
+  border-left: 5px solid #3498db; /* Azul */
+}
+
+.panfleto-quatro-quatro {
+  border-left: 5px solid #9b59b6; /* Roxo */
+}
+
+/* ===== IMAGEM ===== */
+.imagem-panfleto{
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.imagem-panfleto img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===== BLOCO DIREITO ===== */
+.conjunto-divs{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* ===== INFORMAÇÕES ===== */
+.panfleto-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panfleto-info h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.panfleto-info > p {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.panfleto-info ul{
+  padding-left: 0;
+}
+
+.panfleto-info li{
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.panfleto-info li:before {
+  content: "•";
+  color: #10a1e4;
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem;
+}
+
+/* ===== TAMANHOS / PREÇOS ===== */
+.info-material{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tamanho-material{
+  background-color: #10a1e4;
+  color: white;
+  width: 220px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Cores diferentes para cada tipo de panfleto */
+.panfleto-quatro-zero .tamanho-material {
+  background-color: #2ecc71;
+}
+
+.panfleto-quatro-um .tamanho-material {
+  background-color: #3498db;
+}
+
+.panfleto-quatro-quatro .tamanho-material {
+  background-color: #9b59b6;
+}
+
+/* Efeito hover */
+.tamanho-material:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== CONTROLE DE ESPAÇO ===== */
+.tamanho-material h1,
+.tamanho-material h2{
+  margin: 0;
+  line-height: 1.2;
+}
+
+.tamanho-material h1{
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.tamanho-material h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Tablet */
+@media (max-width: 930px){
+  .panfleto-item{
+    gap: 25px;
+    margin: 15px 5px;
+    padding: 15px;
+  }
+  
+  .imagem-panfleto{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .info-material{
+    gap: 15px;
+  }
+  
+  .tamanho-material{
+    width: 200px;
+    padding: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .titulo-site h1{
+    font-size: 1.8rem;
+  }
+
+  .titulo-site h2{
+    font-size: 1.2rem;
+  }
+
+  .panfleto-item{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .imagem-panfleto{
+    width: 220px;
+    height: 220px;
+  }
+
+  .info-material{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .panfleto-info li{
+    text-align: left;
+  }
+
+  .tamanho-material h2{
+    font-size: 1.5rem;
+  }
+
+  .tamanho-material h1{
+    font-size: 1rem;
+  }
+
+  .panfleto-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .panfleto-info li {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 450px) {
+  .imagem-panfleto {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .panfleto-info h2 {
+    font-size: 1.3rem;
+  }
+  
+  .tamanho-material {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .tamanho-material h2 {
+    font-size: 1.3rem;
+  }
+  
+  .panfleto-info li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 360px) {
+  .panfleto-item {
+    padding: 12px;
+    margin: 15px 0;
+  }
+  
+  .imagem-panfleto {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .panfleto-info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .tamanho-material h2 {
+    font-size: 1.2rem;
+  }
+}
