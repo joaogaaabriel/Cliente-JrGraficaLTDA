@@ -1,0 +1,327 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+.pagina-devartes {
+  max-width: 1000px;
+  background-color: rgba(49, 154, 168, 0.1);
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ===== CARD DE SERVIÇO ===== */
+.arte-item {
+  margin: 20px 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arte-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Bordas coloridas para cada tipo de serviço */
+.arte-simples {
+  border-left: 6px solid #2ecc71;
+}
+
+.arte-cartao {
+  border-left: 6px solid #3498db;
+}
+
+.arte-panfleto-frente {
+  border-left: 6px solid #e74c3c;
+}
+
+.arte-panfleto-completo {
+  border-left: 6px solid #9b59b6;
+}
+
+.arte-convites {
+  border-left: 6px solid #f39c12;
+}
+
+/* ===== IMAGEM ===== */
+.imagem-arte {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #ecf0f1;
+}
+
+.imagem-arte img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* ===== BLOCO DIREITO ===== */
+.conjunto-divs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* ===== INFORMAÇÕES DO SERVIÇO ===== */
+.arte-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.arte-info h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.arte-info > p {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.arte-info ul {
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.arte-info li {
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.4;
+  color: #34495e;
+}
+
+.arte-info li:before {
+  content: "✓";
+  color: #10a1e4;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ===== INFORMAÇÕES DE SERVIÇO (TEMPO/PREÇO) ===== */
+.info-servico {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.tempo-servico,
+.valor-servico {
+  background: linear-gradient(135deg, #10a1e4 0%, #0d8bc7 100%);
+  color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(16, 161, 228, 0.2);
+}
+
+/* Cores diferentes para cada tipo de serviço */
+.arte-simples .tempo-servico,
+.arte-simples .valor-servico {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.arte-cartao .tempo-servico,
+.arte-cartao .valor-servico {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.arte-panfleto-frente .tempo-servico,
+.arte-panfleto-frente .valor-servico {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.arte-panfleto-completo .tempo-servico,
+.arte-panfleto-completo .valor-servico {
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.arte-convites .tempo-servico,
+.arte-convites .valor-servico {
+  background: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+}
+
+/* ===== TIPOGRAFIA DOS VALORES ===== */
+.tempo-servico h1,
+.valor-servico h1,
+.tempo-servico h2,
+.valor-servico h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.tempo-servico h1,
+.valor-servico h1 {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: normal;
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+.tempo-servico h2,
+.valor-servico h2 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: bold;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.arte-info li {
+  font-size: 1.05rem;
+}
+
+/* ===== OBSERVAÇÃO FINAL ===== */
+.observacao-final {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  border-left: 6px solid #34495e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.observacao-conteudo h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.observacao-conteudo p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.observacao-conteudo p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 930px) {
+  .info-servico {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tempo-servico,
+  .valor-servico {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .arte-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .imagem-arte {
+    width: 250px;
+    height: 250px;
+  }
+
+  .info-servico {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .arte-info li {
+    text-align: left;
+  }
+
+  .tempo-servico h2,
+  .valor-servico h2 {
+    font-size: 1.5rem;
+  }
+
+  .tempo-servico h1,
+  .valor-servico h1 {
+    font-size: 1rem;
+  }
+
+  .arte-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .arte-info li {
+    font-size: 1rem;
+  }
+
+  .observacao-final {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 450px) {
+  .imagem-arte {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .arte-info h2 {
+    font-size: 1.4rem;
+  }
+  
+  .tempo-servico h2,
+  .valor-servico h2 {
+    font-size: 1.3rem;
+  }
+
+  .arte-item {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .observacao-final {
+    padding: 15px;
+  }
+}
+
+/* Desktop Pequeno */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .imagem-arte {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .arte-item {
+    gap: 30px;
+  }
+}

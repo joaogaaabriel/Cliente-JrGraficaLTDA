@@ -1,0 +1,472 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+.pagina-servicos {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+/* ===== INTRODUÇÃO ===== */
+.introducao-servicos {
+  background: linear-gradient(135deg, #10a1e4 0%, #0d8bc7 100%);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(16, 161, 228, 0.3);
+}
+
+.introducao-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.introducao-content > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+.destaque-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.destaque-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.destaque-item i {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.destaque-item span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin: 50px 0 30px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #10a1e4;
+  border-radius: 2px;
+}
+
+/* ===== SERVIÇOS ESPECIALIZADOS ===== */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.servico-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-top: 5px solid #10a1e4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Cores específicas para cada serviço */
+.impressao-digital { border-top-color: #2ecc71; }
+.impressao-offset { border-top-color: #3498db; }
+.acabamentos { border-top-color: #e74c3c; }
+.sinalizacao { border-top-color: #9b59b6; }
+.eventos { border-top-color: #f39c12; }
+.design { border-top-color: #1abc9c; }
+
+.servico-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #10a1e4;
+}
+
+.impressao-digital .servico-icon { color: #2ecc71; }
+.impressao-offset .servico-icon { color: #3498db; }
+.acabamentos .servico-icon { color: #e74c3c; }
+.sinalizacao .servico-icon { color: #9b59b6; }
+.eventos .servico-icon { color: #f39c12; }
+.design .servico-icon { color: #1abc9c; }
+
+.servico-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.servico-card > p {
+  color: #34495e;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.servico-lista {
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.servico-lista li {
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  position: relative;
+  color: #34495e;
+}
+
+.servico-lista li:before {
+  content: "•";
+  color: #10a1e4;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* ===== PROCESSO DE TRABALHO ===== */
+.processo-trabalho {
+  margin: 60px 0;
+}
+
+.processo-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.processo-steps::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  right: 50px;
+  height: 3px;
+  background: #ecf0f1;
+  z-index: 1;
+}
+
+.step {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #10a1e4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+  box-shadow: 0 6px 15px rgba(16, 161, 228, 0.3);
+}
+
+.step h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-family: 'Tommy-Medium', Arial, sans-serif;
+}
+
+.step p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== PORQUE ESCOLHER ===== */
+.porque-escolher {
+  margin: 60px 0;
+}
+
+.vantagens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.vantagem {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.vantagem:hover {
+  transform: translateY(-5px);
+}
+
+.vantagem i {
+  font-size: 3rem;
+  color: #10a1e4;
+  margin-bottom: 20px;
+}
+
+.vantagem h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.vantagem p {
+  color: #34495e;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== CTA FINAL ===== */
+.servicos-cta {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+  margin: 60px 0 40px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.3);
+}
+
+.servicos-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.servicos-cta > .cta-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+  background: #10a1e4;
+  color: white;
+}
+
+.cta-button.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button.primary:hover {
+  background: #0d8bc7;
+}
+
+.cta-button.whatsapp:hover {
+  background: #1da851;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .pagina-servicos {
+    padding: 15px;
+  }
+  
+  .introducao-servicos {
+    padding: 30px 20px;
+  }
+  
+  .introducao-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .destaque-info {
+    gap: 30px;
+  }
+  
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .processo-steps::before {
+    display: none;
+  }
+  
+  .processo-steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .servicos-cta {
+    padding: 40px 20px;
+  }
+  
+  .servicos-cta h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+    margin: 40px 0 25px;
+  }
+  
+  .introducao-content h2 {
+    font-size: 1.4rem;
+  }
+  
+  .introducao-content > p {
+    font-size: 1rem;
+  }
+  
+  .destaque-item i {
+    font-size: 2rem;
+  }
+  
+  .servico-card {
+    padding: 20px;
+  }
+  
+  .servico-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .vantagem {
+    padding: 20px 15px;
+  }
+  
+  .vantagem i {
+    font-size: 2.5rem;
+  }
+  
+  .servicos-cta {
+    padding: 30px 15px;
+    margin: 40px 0;
+  }
+  
+  .servicos-cta h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Desktop Pequeno */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .processo-steps {
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    min-width: calc(33.333% - 20px);
+  }
+  
+  .processo-steps::before {
+    display: none;
+  }
+}

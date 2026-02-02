@@ -1,0 +1,328 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+.pagina-contato {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+/* ===== INFORMAÇÕES DE CONTATO ===== */
+.contato-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 5px solid #10a1e4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Cores específicas para cada card */
+.info-card.telefone {
+  border-left-color: #2ecc71;
+}
+
+.info-card.whatsapp {
+  border-left-color: #25D366;
+}
+
+.info-card.endereco {
+  border-left-color: #e74c3c;
+}
+
+.info-card.horario {
+  border-left-color: #f39c12;
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.8rem;
+  color: #10a1e4;
+}
+
+.telefone .info-icon { color: #2ecc71; }
+.whatsapp .info-icon { color: #25D366; }
+.endereco .info-icon { color: #e74c3c; }
+.horario .info-icon { color: #f39c12; }
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.info-content p {
+  color: #34495e;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.info-sub {
+  display: block;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+}
+
+/* ===== MAPA ===== */
+.mapa-localizacao {
+  margin: 40px 0;
+}
+
+.mapa-titulo {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.mapa-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px solid #ecf0f1;
+}
+
+/* ===== FAQ ===== */
+.faq-section {
+  margin: 50px 0;
+}
+
+.faq-titulo {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-family: 'Tommy-Bold', Arial, sans-serif;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-pergunta {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Tommy-Medium', Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+.faq-pergunta:hover {
+  background: #f8f9fa;
+}
+
+.faq-pergunta i {
+  transition: transform 0.3s ease;
+  color: #10a1e4;
+}
+
+.faq-pergunta.active i {
+  transform: rotate(180deg);
+}
+
+.faq-resposta {
+  max-height: 0;
+  overflow: hidden;
+  background: #f8f9fa;
+  transition: max-height 0.3s ease;
+}
+
+.faq-resposta p {
+  padding: 0 20px 20px;
+  margin: 0;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* ===== CTA FINAL ===== */
+.contato-cta {
+  background: linear-gradient(135deg, #10a1e4 0%, #0d8bc7 100%);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+  box-shadow: 0 8px 25px rgba(16, 161, 228, 0.3);
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.cta-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.cta-button:hover {
+  background: #1da851;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+}
+
+.cta-sub {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contato-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .info-card {
+    padding: 20px;
+  }
+  
+  .faq-pergunta {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .contato-cta {
+    padding: 30px 20px;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .pagina-contato {
+    padding: 15px;
+  }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .info-icon {
+    margin-bottom: 10px;
+  }
+  
+  .mapa-container iframe {
+    height: 300px;
+  }
+  
+  .faq-pergunta {
+    font-size: 0.95rem;
+  }
+  
+  .contato-cta {
+    padding: 25px 15px;
+    margin: 30px 0;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.4rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Desktop Pequeno */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .contato-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
