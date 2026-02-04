@@ -1,15 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrada</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JrGráfica - Sua Gráfica em Goiânia</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <h1>Entrada Site Teste</h1>
-        <a href="/pages/index.html">TESTE</a>
-    </header>
+
+<header class="cabecalho-principal">
+
+  <!-- Logo -->
+  <div class="logo-cabecalho">
+    <img 
+      src="../images/JrGrafica-Logo2026.PNG"
+      alt="Logotipo da JrGráfica"
+      class="logo-header">
+  </div>
+
+
+  <!-- Navegação -->
+  <nav class="navegacao-principal" aria-label="Navegação principal">
+    <ul class="menu-principal">
+      <li><a href="pages/catalogo.html">Catálogo</a></li>
+      <li><a href="pages/servico.html">Serviços</a></li>
+      <li><a href="pages/contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-titulo">Bem-vindo à JrGráfica</h1>
+      <h2 class="hero-subtitulo">Sua gráfica em Goiânia há mais de 20 anos</h2>
+      <p class="hero-descricao">Qualidade, agilidade e preço justo em todos os serviços gráficos. Do cartão de visita ao banner, nós temos a solução ideal para o seu negócio.</p>
+      
+      <div class="hero-botoes">
+        <a href="pages/index.html" class="botao-primario">
+          <i class="fas fa-shopping-cart"></i> Ver Catálogo
+        </a>
+        <a href="pages/contato.html" class="botao-secundario">
+          <i class="fas fa-phone-alt"></i> Falar Conosco
+        </a>
+      </div>
+    </div>
     
+    <div class="hero-scroll">
+      <span>Role para explorar</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+</header>
+
+<main id="home">
+
+  <!-- Destaques -->
+  <section class="destaques-section">
+    <h2 class="section-titulo">Por que escolher a JrGráfica?</h2>
+    
+    <div class="destaques-grid">
+      <div class="destaque-card">
+        <div class="destaque-icone">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3>20+ Anos de Experiência</h3>
+        <p>Mais de duas décadas oferecendo soluções gráficas de qualidade em Goiânia e região.</p>
+      </div>
+      
+      <div class="destaque-card">
+        <div class="destaque-icone">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3>Entrega Rápida</h3>
+        <p>Prazos cumpridos com agilidade. Priorizamos a sua necessidade sem abrir mão da qualidade.</p>
+      </div>
+      
+      <div class="destaque-card">
+        <div class="destaque-icone">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3>Atendimento Personalizado</h3>
+        <p>Nossa equipe está pronta para entender suas necessidades e oferecer a melhor solução.</p>
+      </div>
+      
+      <div class="destaque-card">
+        <div class="destaque-icone">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>Qualidade Premium</h3>
+        <p>Utilizamos as melhores técnicas e materiais para garantir resultados impecáveis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo (Versão Resumida) -->
+  <section id="catalogo" class="catalogo-section">
+    <h2 class="section-titulo">Nossos Serviços em Destaque</h2>
+    
+    <div class="catalogo-grid">
+      <a href="cartoesdevisita.html" class="catalogo-link">
+        <div class="catalogo-card">
+          <div class="catalogo-imagem">
+            <img src="../images/CartaoDeVisitaIcon.png" alt="Cartões de Visita">
+          </div>
+          <div class="catalogo-conteudo">
+            <h3>Cartões de Visita</h3>
+            <p>Profissionais e personalizados para sua empresa se destacar.</p>
+            <span class="catalogo-preco">A partir de R$ 129,90</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="catalogo-link">
+        <div class="catalogo-card">
+          <div class="catalogo-imagem">
+            <img src="../images/PanfletoIcon.png" alt="Panfletos">
+          </div>
+          <div class="catalogo-conteudo">
+            <h3>Panfletos e Flyers</h3>
+            <p>Divulgação eficiente para sua campanha de marketing.</p>
+            <span class="catalogo-preco">A partir de R$ 50,00</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="catalogo-link">
+        <div class="catalogo-card">
+          <div class="catalogo-imagem">
+            <img src="../images/ConviteCasamentoIcon.png" alt="Convites">
+          </div>
+          <div class="catalogo-conteudo">
+            <h3>Convites Especiais</h3>
+            <p>Casamento, 15 anos e eventos com design exclusivo.</p>
+            <span class="catalogo-preco">Sob consulta</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="catalogo-link">
+        <div class="catalogo-card">
+          <div class="catalogo-imagem">
+            <img src="../images/BannerIcon.png" alt="Banners">
+          </div>
+          <div class="catalogo-conteudo">
+            <h3>Banners</h3>
+            <p>Impacto visual para eventos e divulgação de negócios.</p>
+            <span class="catalogo-preco">A partir de R$ 85,00 m²</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="catalogo-cta">
+      <a href="pages/catalogo.html" class="botao-ver-todos">
+        <i class="fas fa-th-large"></i> Ver Catálogo Completo
+      </a>
+    </div>
+  </section>
+
+  <!-- Testemunhos -->
+  <section class="testemunhos-section">
+    <h2 class="section-titulo">O que nossos clientes dizem</h2>
+    
+    <div class="testemunhos-container">
+      <div class="testemunho-card">
+        <div class="testemunho-estrelas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testemunho-texto">"Excelente qualidade nos cartões de visita da minha empresa. Entrega rápida e preço justo. Recomendo!"</p>
+        <div class="testemunho-autor">
+          <strong>Carlos Silva</strong>
+          <span>Empresário</span>
+        </div>
+      </div>
+      
+      <div class="testemunho-card">
+        <div class="testemunho-estrelas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="testemunho-texto">"Fiz os convites do meu casamento na JrGráfica e ficaram perfeitos! Atendimento personalizado e muito cuidado com os detalhes."</p>
+        <div class="testemunho-autor">
+          <strong>Ana Paula Costa</strong>
+          <span>Cliente Evento</span>
+        </div>
+      </div>
+      
+      <div class="testemunho-card">
+        <div class="testemunho-estrelas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testemunho-texto">"Sempre conto com a JrGráfica para o material promocional da minha loja. Qualidade constante e bom atendimento."</p>
+        <div class="testemunho-autor">
+          <strong>Roberto Santos</strong>
+          <span>Lojista</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-final">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>Pronto para impressionar?</h2>
+      <p>Entre em contato agora mesmo e faça um orçamento sem compromisso.</p>
+      
+      <div class="cta-botoes">
+        <a href="https://api.whatsapp.com/send/?phone=5562996615420&text=Olá%2C+vim+do+site+e+quero+fazer+um+orçamento.&type=phone_number&app_absent=0" 
+           class="botao-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+5562996615420" class="botao-telefone">
+          <i class="fas fa-phone-alt"></i> Ligar Agora
+        </a>
+      </div>
+      
+      <div class="cta-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Av. Portugal, 153 - Setor Oeste, Goiânia</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <span>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+    <div id="footer-content">
+        <div id="footer-contacts">
+            <img src="../images/JrGrafica-Logo2026.PNG" alt="Logo JrGrafica" class="logo-footer">
+
+            <p>Jr Gráfica, sua gráfica em Goiania!</p>
+            
+
+            <div id="footer-social-media">
+
+                <a href="#" class="footer-link" id="instagram"> <!-- Link para o Insta -->
+                    <i class="fa-brands fa-instagram"></i> <!-- Icone Instagram -->
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp"> <!-- Link para o Whats -->
+                    <i class="fa-brands fa-whatsapp"></i> <!-- Icone Whatsapp -->
+                </a>
+
+            </div>
+        </div>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Mais Informaçoes</h3>
+            </li>
+            <li>
+                <a href="servico.html" class="footer-link">Sobre nós</a>
+            </li>
+            <li>
+                <a href="#catalogo" class="footer-link">Todos os Serviços</a>
+            </li>
+        </ul>
+
+
+        </div>
+
+        <div id="footer-copyright">
+            © 2026 Todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
+
+<script src="../js/index.js"></script>
 </body>
 </html>

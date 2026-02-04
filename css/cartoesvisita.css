@@ -23,15 +23,15 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .cartao-simples{
-  border-left: 5px solid #000000;
+  border-left: 5px solid #10a1e4;
 }
 
 .cartao-colorido {
-  border-left: 5px solid #e74c3c;
+  border-left: 5px solid #10a1e4;
 }
 
 .cartao-bopp {
-  border-left: 5px solid #3498db;
+  border-left: 5px solid #10a1e4;
 }
 
 /* ===== IMAGEM ===== */

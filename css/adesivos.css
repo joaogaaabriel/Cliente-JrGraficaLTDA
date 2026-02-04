@@ -16,18 +16,17 @@
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-left: 5px solid #10a1e4;
-  border-radius: 8px;
 }
 
 /* Cores diferentes para cada tamanho */
-.adesivo-3x3 { border-left-color: #3498db; }
-.adesivo-4x4 { border-left-color: #2ecc71; }
-.adesivo-5x5 { border-left-color: #f39c12; }
-.adesivo-6x6 { border-left-color: #e74c3c; }
-.adesivo-7x7 { border-left-color: #9b59b6; }
-.adesivo-8x8 { border-left-color: #1abc9c; }
-.adesivo-9x9 { border-left-color: #d35400; }
-.adesivo-10x10 { border-left-color: #34495e; }
+.adesivo-3x3 { border-left-color: #10a1e4; }
+.adesivo-4x4 { border-left-color: #10a1e4; }
+.adesivo-5x5 { border-left-color: #10a1e4; }
+.adesivo-6x6 { border-left-color: #10a1e4; }
+.adesivo-7x7 { border-left-color: #10a1e4; }
+.adesivo-8x8 { border-left-color: #10a1e4; }
+.adesivo-9x9 { border-left-color: #10a1e4; }
+.adesivo-10x10 { border-left-color: #10a1e4; }
 
 /* ===== IMAGEM ===== */
 .imagem-adesivo {
@@ -121,28 +120,28 @@
 
 /* Cores correspondentes às bordas */
 .adesivo-3x3 .qnt-material,
-.adesivo-3x3 .valor-material { background-color: #3498db; }
+.adesivo-3x3 .valor-material { background-color: #10a1e4; }
 
 .adesivo-4x4 .qnt-material,
-.adesivo-4x4 .valor-material { background-color: #2ecc71; }
+.adesivo-4x4 .valor-material { background-color: #10a1e4; }
 
 .adesivo-5x5 .qnt-material,
-.adesivo-5x5 .valor-material { background-color: #f39c12; }
+.adesivo-5x5 .valor-material { background-color: #10a1e4; }
 
 .adesivo-6x6 .qnt-material,
-.adesivo-6x6 .valor-material { background-color: #e74c3c; }
+.adesivo-6x6 .valor-material { background-color: #10a1e4; }
 
 .adesivo-7x7 .qnt-material,
-.adesivo-7x7 .valor-material { background-color: #9b59b6; }
+.adesivo-7x7 .valor-material { background-color: #10a1e4; }
 
 .adesivo-8x8 .qnt-material,
-.adesivo-8x8 .valor-material { background-color: #1abc9c; }
+.adesivo-8x8 .valor-material { background-color: #10a1e4; }
 
 .adesivo-9x9 .qnt-material,
-.adesivo-9x9 .valor-material { background-color: #d35400; }
+.adesivo-9x9 .valor-material { background-color: #10a1e4; }
 
 .adesivo-10x10 .qnt-material,
-.adesivo-10x10 .valor-material { background-color: #34495e; }
+.adesivo-10x10 .valor-material { background-color: #10a1e4; }
 
 /* ===== CONTROLE DE ESPAÇO ENTRE H1 E H2 ===== */
 .qnt-material h1,
