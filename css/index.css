@@ -121,50 +121,6 @@ html, body {
   color: #ddd;
 }
 
-.hero-botoes {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.botao-primario, .botao-secundario {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 25px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  min-width: 180px;
-  justify-content: center;
-}
-
-.botao-primario {
-  background: #10a1e4;
-  color: white;
-  
-}
-
-.botao-secundario {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.botao-primario:hover {
-  background: #0d8bc7;
-  transform: translateY(-3px);
-  
-}
-
-.botao-secundario:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
-}
 
 .hero-scroll {
   display: flex;
@@ -672,16 +628,6 @@ footer {
 @media (max-width: 768px) {
   .hero-section {
     min-height: 70vh;
-  }
-  
-  .hero-botoes {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .botao-primario, .botao-secundario {
-    width: 100%;
-    max-width: 250px;
   }
   
   .destaques-grid {
