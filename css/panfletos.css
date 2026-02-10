@@ -21,15 +21,15 @@
 
 /* Bordas coloridas para cada tipo */
 .panfleto-quatro-zero {
-  border-left: 5px solid #2ecc71; /* Verde */
+  border-left: 5px solid #10a1e4; /* Verde */
 }
 
 .panfleto-quatro-um {
-  border-left: 5px solid #3498db; /* Azul */
+  border-left: 5px solid #10a1e4; /* Azul */
 }
 
 .panfleto-quatro-quatro {
-  border-left: 5px solid #9b59b6; /* Roxo */
+  border-left: 5px solid #10a1e4; /* Roxo */
 }
 
 /* ===== IMAGEM ===== */
@@ -114,27 +114,21 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
 /* Cores diferentes para cada tipo de panfleto */
 .panfleto-quatro-zero .tamanho-material {
-  background-color: #2ecc71;
+  background-color: #10a1e4;
 }
 
 .panfleto-quatro-um .tamanho-material {
-  background-color: #3498db;
+  background-color: #10a1e4;
 }
 
 .panfleto-quatro-quatro .tamanho-material {
-  background-color: #9b59b6;
+  background-color: #10a1e4;
 }
 
-/* Efeito hover */
-.tamanho-material:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
 
 /* ===== CONTROLE DE ESPAÇO ===== */
 .tamanho-material h1,

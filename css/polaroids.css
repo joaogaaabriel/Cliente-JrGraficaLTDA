@@ -21,23 +21,23 @@
 
 /* Cores diferentes para cada pacote */
 .polaroid-azul {
-  border-left: 5px solid #3498db;
+  border-left: 5px solid #10a1e4;
 }
 
 .polaroid-verde {
-  border-left: 5px solid #2ecc71;
+  border-left: 5px solid #10a1e4;
 }
 
 .polaroid-laranja {
-  border-left: 5px solid #e67e22;
+  border-left: 5px solid #10a1e4;
 }
 
 .polaroid-roxo {
-  border-left: 5px solid #9b59b6;
+  border-left: 5px solid #10a1e4;
 }
 
 .polaroid-grande {
-  border-left: 5px solid #e74c3c;
+  border-left: 5px solid #10a1e4;
 }
 
 /* ===== IMAGEM ===== */
@@ -127,34 +127,27 @@
 /* Cores diferentes para cada pacote */
 .polaroid-azul .qnt-material,
 .polaroid-azul .valor-material {
-  background-color: #3498db;
+  background-color: #10a1e4;
 }
 
 .polaroid-verde .qnt-material,
 .polaroid-verde .valor-material {
-  background-color: #2ecc71;
+  background-color: #10a1e4;
 }
 
 .polaroid-laranja .qnt-material,
 .polaroid-laranja .valor-material {
-  background-color: #e67e22;
+  background-color: #10a1e4;
 }
 
 .polaroid-roxo .qnt-material,
 .polaroid-roxo .valor-material {
-  background-color: #9b59b6;
+  background-color: #10a1e4;
 }
 
 .polaroid-grande .qnt-material,
 .polaroid-grande .valor-material {
-  background-color: #e74c3c;
-}
-
-/* Efeito hover nos cards de preço */
-.qnt-material:hover,
-.valor-material:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: #10a1e4;
 }
 
 /* ===== CONTROLE DE ESPAÇO ENTRE H1 E H2 ===== */

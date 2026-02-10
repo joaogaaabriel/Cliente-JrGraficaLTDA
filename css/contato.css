@@ -198,7 +198,7 @@
 
 /* ===== CTA FINAL ===== */
 .contato-cta {
-  background: linear-gradient(135deg, #10a1e4 0%, #0d8bc7 100%);
+  background: #10a1e4;
   border-radius: 12px;
   padding: 40px;
   text-align: center;
@@ -226,7 +226,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: #25D366;
+  background: #15b650;
   color: white;
   padding: 15px 30px;
   border-radius: 8px;
